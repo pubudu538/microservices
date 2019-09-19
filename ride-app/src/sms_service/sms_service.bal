@@ -9,7 +9,8 @@ import ballerina/kubernetes;
 @kubernetes:Deployment {
     registry: "pubudu",
     username: "pubudu",
-    password: "xxx"
+    password: "XXXX",
+    push: true
 }
 service sms on new http:Listener(9090) {
 

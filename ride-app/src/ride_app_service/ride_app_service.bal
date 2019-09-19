@@ -12,7 +12,8 @@ import ballerina/istio;
 @kubernetes:Deployment {
     registry: "pubudu",
     username: "pubudu",
-    password: "xxx"
+    password: "XXXX",
+    push: true
 }
 service ride on new http:Listener(9070) {
 

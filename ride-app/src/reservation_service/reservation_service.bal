@@ -11,7 +11,8 @@ import ballerina/math;
 @kubernetes:Deployment {
     registry: "pubudu",
     username: "pubudu",
-    password: "xxx"
+    password: "XXXX",
+    push: true
 }
 service reserve on new http:Listener(9080) {
 
