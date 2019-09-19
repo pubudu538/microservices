@@ -25,3 +25,10 @@ This will create the docker images, push the docker images to the docker registr
 ```
 ballerina build -a
 ``` 
+
+### Deploy K8s artifacts 
+
+```
+kubectl apply -f target/kubernetes/ -R
+``` 
+
